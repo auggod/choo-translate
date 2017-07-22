@@ -1,6 +1,10 @@
 # choo-translate
 
-Simple translation solution for choo
+[![npm][npm-image]][npm-url]
+[![standard][standard-image]][standard-url]
+
+Simple translation solution for choo!
+
 Expect your translations files to be available as /assets/${lang}.json (you could just use bankai then)
 
 ## Usage
@@ -45,7 +49,9 @@ emitter.emit('load:translations', 'en')
 Then in your templates
 
 ```
-return html`
-  ${translate(state.translations, { term: 'CHOO_IS_FUN' })}
-`
+html`${translate(state.translations, { term: 'CHOO_IS_FUN' })}`
 ```
+
+## License
+
+[MIT](LICENSE.md)
