@@ -1,0 +1,25 @@
+{
+  "name": "choo-translate",
+  "version": "1.0.0",
+  "description": "Translate",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "start": "node .",
+    "test": "standard && npm run deps"
+  },
+  "keywords": [
+    "translate",
+    "choo"
+  ],
+  "author": "Augustin Godiscal <hello@auggod.tech>",
+  "license": "MIT",
+  "devDependencies": {
+    "dependency-check": "^2.8.0",
+    "standard": "^9.0.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "xhr": "^2.4.0"
+  }
+}
